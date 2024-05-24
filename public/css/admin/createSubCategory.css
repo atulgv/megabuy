@@ -1,0 +1,71 @@
+.main-section {
+    background-image: linear-gradient(rgb(120, 242, 201), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vw;
+}
+
+.login-page {
+    width: 55%;
+    height: 30vw;
+    background-color: rgb(79, 142, 79);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login-page h2{
+    font-weight: lighter;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.username th, .password th{
+    font-size: 1.5rem;
+    width: 30vw;
+}
+
+.username input, .password input{
+    height: 3vw;
+    font-size: 1.6rem;
+    border-radius: 10px;
+    padding: 2px 30px;
+}
+
+td{
+    height: 4vw;
+    width: 30vw;
+}
+
+td select{
+    height: 3vw;
+    width: 94%;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+td select option{
+    padding: 2vw 3vw;
+}
+
+#submit-btn input, #register-btn a{
+    width: 60%;
+    height:  3vw;
+    border-radius: 5px;
+    font-size: 1.6rem;
+    float: right;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+#register-btn a {
+    color: black;
+    background-color: white;
+    text-align: center;
+    padding-top: 0.5vw;
+    border: 2px solid black;
+
+}

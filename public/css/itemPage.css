@@ -1,0 +1,559 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+/** bread-crumb **/
+
+.bread-crumb {
+    height: 3vw;
+    /* background-color: pink;
+    border: 2px solid black; */
+    padding-top: 1vw;
+    padding-left: 2vw;
+    font-size: 1.2rem;
+    background-color: antiquewhite;
+}
+
+/** main-section **/
+
+.main-section {
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: space-evenly; */
+    margin: 1vw 0vw;
+}
+
+.product-section {
+    display: grid;
+    grid-template-rows: 1fr;
+    /* font-family: "Raleway", sans-serif;
+    background-color: #01e37f; */
+  }
+
+  h3 {
+    font-size: 0.7em;
+    letter-spacing: 1.2px;
+    color: #a6a6a6;
+  }
+
+  img {
+    max-width: 100%;
+    filter: drop-shadow(1px 1px 3px #a6a6a6);
+  }
+
+  /* ----- Product Section ----- */
+  .product {
+    display: grid;
+    grid-template-columns: 0.6fr 1fr;
+    margin: auto;
+    padding: 2.5em 0;
+    width: 90%;
+    height: 100vh;
+    background-color: #8f8f8f;
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: 500px) {
+    .bread-crumb{
+        height: 10vw;
+    }
+    .product {
+        display: block;
+        background: none;
+        height: 150vh;
+        margin-bottom: 3vh;
+    }
+
+    .product__photo{
+        height: 100vh;
+        position: static;
+        display: block;
+        min-width: 100%;
+        margin-left: 10vw;
+        margin-bottom: 3vw;
+    }
+
+    .product__info {
+        position: static;
+        display: block;
+        height: 100vh;
+        background-color: #525151;
+        margin-bottom: 3vw;
+    }
+
+    .product__info .title h1 {
+        text-align: center;
+        color: white;
+        font-weight: lighter;
+        height: 8vh;
+    }
+
+    .product__info .item-rating, .product__info .item-price {
+        padding: 1vh 3vh;
+    }
+
+    .product__info .offers-section{
+        padding: 1vh 3vh;
+        height: 20vh;
+    }
+
+    .product__info .item-highlight {
+        padding: 1vh 3vh;
+        height: 25vh;
+    }
+
+    .product__info .offers-section h4, .product__info .item-highlight h4 {
+        text-align: center;
+        color: white;
+    }
+
+    .product__info .item-highlight i, .product__info .offers-section i{
+        color: white;
+    }
+
+    .product__info .item-highlight ul{
+        display: block;
+        width: 100%;
+    }
+
+    .product__info .item-highlight ul li{
+        width: 100%;
+    }
+
+    .product__info .wishlist, .product__info .buy {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 4vh;
+        width: 100%;
+    }
+
+    .main-section {
+        height: auto;
+        margin-bottom: 45vh;
+    }
+
+    .product-section {
+        display: block;
+        height: 210vh;
+    }
+
+    .specs-section {
+        display: block;
+        height: auto;
+    }
+
+    .specs-section tab-container {
+        height: auto;
+    }
+
+    .specs-section tab-content {
+        height: auto;
+    }
+
+    .specs-section tab-content tr{
+        border: none;
+    }
+
+    table th,table  td {
+        margin: 0;
+        padding: 0;
+    }
+
+  }
+
+  /* ----- Photo Section ----- */
+  .product__photo {
+    position: relative;
+    width: 80%;
+  }
+
+  .photo-container {
+    position: absolute;
+    left: -2.5em;
+    display: grid;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    box-shadow: 4px 4px 25px -2px rgba(0, 0, 0, 0.3);
+  }
+
+  .photo-main {
+    border-radius: 6px 6px 0 0;
+    background-color: antiquewhite;
+  }
+  .photo-main .controls {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8em;
+    color: #fff;
+  }
+  .photo-main .controls i {
+    cursor: pointer;
+    color: #525151;
+  }
+  .photo-main img {
+    position: absolute;
+    left: 2.5em;
+    top: 5.5em;
+    width: 80%;
+    filter: saturate(150%) contrast(120%) hue-rotate(10deg) drop-shadow(1px 20px 10px rgba(0, 0, 0, 0.3));
+  }
+
+  .photo-album {
+    padding: 0.7em 1em;
+    border-radius: 0 0 6px 6px;
+    background-color: #fff;
+  }
+  .photo-album ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .photo-album li {
+    float: left;
+    width: 65px;
+    height: 85px;
+    padding: 7px;
+    border: 1px solid #a6a6a6;
+    border-radius: 3px;
+    list-style-type: none;
+  }
+
+  /* ----- Informations Section ----- */
+  .product__info {
+    padding: 0.8em 0;
+  }
+
+  .title h1 {
+    margin-bottom: 0.1em;
+    color: #4c4c4c;
+    font-size: 1.5em;
+    font-weight: 900;
+  }
+  .title span {
+    font-size: 0.7em;
+    color: #a6a6a6;
+  }
+
+  .price {
+    margin: 1.5em 0;
+    color: #ff3f40;
+    font-size: 1.2em;
+  }
+
+  .description {
+    clear: left;
+    margin: 2em 0;
+  }
+  .description h3 {
+    margin-bottom: 1em;
+  }
+  .description ul {
+    font-size: 0.8em;
+    list-style: disc;
+    margin-left: 1em;
+  }
+  .description li {
+    text-indent: -0.6em;
+    margin-bottom: 0.5em;
+  }
+
+  .wishlist, .buy{
+    width: 50%;
+  }
+
+  .buy {
+    float:  right;
+    margin-top: -18px;
+  }
+  .buy--btn {
+    padding: 1.5em 3.1em;
+    margin: 0vw 2vw;
+    border: none;
+    border-radius: 7px;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+    color: #fff;
+    background-color: #ff3f40;
+    box-shadow: 2px 2px 25px -7px #4c4c4c;
+    cursor: pointer;
+  }
+  .buy--btn:active {
+    transform: scale(0.97);
+  }
+
+
+  :root {
+	--page-height: 100vh;
+	--page-width: 100vw;
+	--page-margin: 0;
+	--page-padding: 0;
+	--page-font-family: Calibri, "Gill Sans", "Gill Sans MT", "Trebuchet MS", sans-serif;
+	--page-text-color: #eee;
+	/* --page-text-color-hover: rgba(255,255,255,1.0); */
+	--page-background-color: #525151;
+	--tab-display: grid;
+	/* --tab-background-color: rgba(255, 255, 255, 0.03); */
+	--display-none: none;
+	--box-sizing: border-box;
+}
+*:before,
+*:after,
+*,
+::after,
+::before {box-sizing: border-box;}
+.specs-section {
+	/* display: var(--tab-display); */
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+	justify-content: center;
+	/* margin: var(--page-margin); */
+	padding: var(--page-padding);
+	font-family: var(--page-font-family);
+	color: var(--page-text-color);
+	/* background-color: var(--page-background-color); */
+    background-color: white;
+    height: 35vw;
+}
+p {padding: 0 1em;}
+p span {color: var(--page-text-color-hover);}
+
+tab-container {
+	display: var(--tab-display);
+	margin-top: 20px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto 1fr;
+	border: solid rgba(255,255,255,0.03);
+	border-radius: 20px;
+    background-color: #8f8f8f;
+    height: 32vw;
+}
+/*
+TAB CONTROLS
+Hide radios */
+input {display: none;}
+input:checked + label {
+	color: var(--page-text-color-hover);
+	background-color: rgba(255,255,255,0.0);
+	transition: all 250ms;
+}
+label {
+	cursor: pointer;
+	transition: color 250ms;
+	padding: 1em;
+	border-right: solid 2px var(--page-background-color);
+	background-color: #525151;
+	text-align: center;
+	transition: all 250ms;
+}
+label:last-of-type {border: none; }
+label:hover {
+	color: var(--page-text-color-hover);
+	background-color: rgba(255,255,255,0.05);
+}
+
+tab-content {
+	display: var(--tab-display);
+	grid-column: 1 / -1;
+    background-color: #8f8f8f;
+    color: black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2vw;
+
+}
+
+.invisible-scroll {
+    overflow: auto;
+}
+
+.invisible-scroll::-webkit-scrollbar {
+    display: none;
+}
+
+#description {
+    font-size: 1.3rem;
+}
+/*
+Why doesn't this work!?
+input ~ tab-content {display: none;}
+input:checked ~ tab-content {display: var(--tab-display);}*/
+
+input#tabToggle01:checked ~ tab-content:not(:nth-of-type(1)),
+input#tabToggle02:checked ~ tab-content:not(:nth-of-type(2)),
+input#tabToggle03:checked ~ tab-content:not(:nth-of-type(3)),
+input#tabToggle04:checked ~ tab-content:not(:nth-of-type(4)) {display: none;}
+
+
+
+
+
+
+
+
+
+table {
+    /* border: 1px solid #ccc; */
+    border-collapse: collapse;
+    margin: 0;
+    width: 100%;
+    table-layout: fixed;
+  }
+
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+
+  table tr {
+    background-color: #8f8f8f;
+    border: 1px solid #ddd;
+    padding: .35em;
+    height: 2vw;
+  }
+
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  @media screen and (max-width: 1000px) {
+    table {
+      border: 0;
+    }
+
+    table caption {
+      font-size: 1.3em;
+    }
+
+    table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    table tr {
+      /* border-bottom: 3px solid #ddd; */
+      display: block;
+      margin-bottom: .625em;
+    }
+
+    table td {
+      /* border-bottom: 1px solid #ddd; */
+      display: block;
+      font-size: .8em;
+      /* text-align: right; */
+    }
+
+    table td::before {
+      /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+  }
+
+
+  .item-rating{
+    display: flex;
+    color: antiquewhite;
+    font-size: .8rem;
+  }
+
+  .main-rating {
+    margin-left: 1vw;
+
+  }
+
+  .item-price{
+    padding: 2vw 0vw;
+    color: antiquewhite;
+  }
+
+  .price-discount {
+    font-size: 1.4rem;
+  }
+
+  .main-price {
+    font-size: 2.8rem;
+  }
+
+  .main-price strike{
+    font-size: 1.35rem;
+  }
+
+  .offers-section {
+    height: 12vw;
+  }
+
+  .offers-section h4 {
+    padding: 1vw 0vw;
+    color: #525151;
+  }
+
+  .offers-section ul li {
+    padding: 0.3vw 1vw;
+    list-style-type: none;
+
+  }
+
+  .offers-section ul li a {
+    color: antiquewhite;
+  }
+
+  .offers-section ul li a i {
+    color: #525151;
+  }
+
+  .item-highlight {
+    height: 15vw;
+  }
+
+  .item-highlight h4 {
+    padding: 1vw 0vw;
+    color: #525151;
+  }
+
+  .item-highlight ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .item-highlight ul li {
+    width: 45%;
+    list-style-type: none;
+    padding: 0.3vw 0vw;
+    color: antiquewhite;
+  }
+
+  .item-highlight ul li i {
+    padding: 0vw 1vw;
+    color: #525151;
+  }

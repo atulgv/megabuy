@@ -1,0 +1,81 @@
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.register-page {
+    background-color: bisque;
+    width: 95%;
+    min-height: 60vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.registerItem-page {
+    background-color: bisque;
+    width: 95%;
+    min-height: 30vw;
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.registerItem-page h1{
+    font-size: 3em;
+    text-align: center;
+}
+
+.register-page h2{
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+th {
+    font-size: 1.6rem;
+    font-weight: 700;
+    height: 4vw;
+    padding: 0px 30px;
+}
+td input{
+    height: 3vw;
+    width: 90%;
+    border-radius: 10px;
+    padding: 0px 30px;
+    font-size: 1.6rem;
+}
+
+td textarea{
+    height: 3vw;
+    width: 90%;
+    border-radius: 10px;
+    padding: 0px 30px;
+    font-size: 1.6rem;
+}
+
+td select {
+    height: 3vw;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0px 30px;
+    font-size: 1.6rem;
+}
+
+#submit {
+    height: 3vw;
+    width: 30%;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+#submit:hover{
+    background-color: bisque;
+}

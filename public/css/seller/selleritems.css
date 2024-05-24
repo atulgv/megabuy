@@ -1,0 +1,90 @@
+.main-section {
+    background-image: linear-gradient(rgb(120, 242, 201), white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40vw;
+    width: 100%;
+}
+
+.category-data{
+    min-height: 35vw;
+    width: 95%;
+    background-color: rgb(174, 121, 121);
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.intro h2{
+    padding: 2vw 10vw;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 2rem;
+}
+
+/** intro-search **/
+
+.intro-search {
+    height: 50px;
+}
+
+.intro-search form {
+    display: flex;
+}
+
+.intro-search input {
+    height: inherit;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-size: 1rem;
+    width: 35vw;
+}
+
+.intro-search a{
+    height: inherit;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -50px;
+}
+
+#add-category-btn {
+    padding: 0.5vw 3vw;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: lighter;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.main-section th {
+    padding: 2vw;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    border: 2px solid black;
+
+}
+
+.main-section td {
+    padding: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1rem;
+    border: 2px solid black;
+
+}
+
+.main-section table {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

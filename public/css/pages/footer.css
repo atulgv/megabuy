@@ -1,0 +1,274 @@
+/** footer  section **/
+
+.info-section {
+    background-image: linear-gradient(white, #f7f7fa);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .info-section{
+        display: block;
+        height: 20vh;
+        margin-top: 10vw;
+    }
+
+    .info-words{
+        width: 100%;
+    }
+
+    .info-icons {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .info-section{
+        display: block;
+        height: 30vh;
+        margin-top: 30vw;
+    }
+
+    .email-support{
+        margin-left: 35vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .info-section{
+        display: block;
+        height: 30vh;
+        margin-top: 40vw;
+    }
+
+    .info-icons{
+        margin-top: 10vh;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .email-support{
+        margin-left: 35vw;
+    }
+}
+
+.info-words{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 45%;
+    padding-left: 2vw;
+}
+
+.info-words h1{
+    font-size: 1.2rem;
+}
+
+.info-words p {
+    font-size: 1rem;
+}
+
+.info-icons{
+    display: flex;
+    justify-content: space-evenly;
+    width: 54%;
+}
+
+.help-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+}
+
+.help-icon {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: pink;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email-support {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 29%;
+}
+
+.email-icon {
+    height: 35px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: pink;
+    font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/** footer-categories **/
+
+.footer-categories {
+    background-color: #525151;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4vh;
+}
+
+.footer-categories h3 a{
+    color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-categories {
+        display: block;
+    }
+
+    .footer-categories h3, .footer-categories ul, .footer-categories li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-categories h3{
+        margin-top: 3vw;
+    }
+}
+
+.footer-electronics h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 2vh;
+    color: #000;
+}
+.footer-electronics li {
+    list-style-type: none;
+    line-height: 4vh;
+}
+
+.footer-electronics li a{
+    color: #bcbaba;
+}
+
+/** footer-social **/
+
+.footer-social {
+    background-color: #525151;
+    padding-top: 6vh;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 3vh;
+    color: #000000;
+}
+
+.download-section {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 4vh;
+}
+
+.download-icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+.social-section {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 4vh;
+    width: 20vw;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer-social{
+        display: block;
+    }
+
+    .download-section, .social-section {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 5vw;
+    }
+
+    .download-icons, .social-icons {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 30vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .download-section, .social-section{
+        height: 12vw;
+    }
+
+    .download-icons, .social-icons{
+        font-size: 1.5rem;
+    }
+}
+
+/** footer-copyright **/
+
+.footer-copyright {
+    background-color: #8f8f8f ;
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyright-line {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.copyright-links a {
+    color: #000000;
+    font-size: 1rem;
+    margin-left: 4vw;
+}
+
+
+
+
+
+
+
+/* YouTube icon */
+#ytb {
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    line-height: 52px;
+    border: 2px solid transparent;
+    color: #080808;
+    font-size: 2.5rem;
+    transition: 0.3s;
+  }
+
+  #ytb:hover{
+    border-radius: 50%;
+    border-color: #525151;
+    box-shadow: 0 0 10px #faf9f9;
+  }
